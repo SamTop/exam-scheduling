@@ -28,7 +28,7 @@ public class TimeTable extends JFrame implements ActionListener {
 		String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:"};
 		field = new JTextField[capField.length];
 		
-		String capButton[] = {"Load", "Start", "Step", "Print", "Exit"};
+		String capButton[] = {"Load", "Start", "Cont", "Step", "Print", "Exit"};
 		tool = new JButton[capButton.length];
 		
 		tools.setLayout(new GridLayout(2 * capField.length + capButton.length, 1));
@@ -96,15 +96,31 @@ public class TimeTable extends JFrame implements ActionListener {
 			setVisible(true);
 			break;
 		case 2:
+			min = Integer.MAX_VALUE;
+			step = 0;
+
+			for (int iteration = 1; iteration <= Integer.parseInt(field[3].getText()); iteration++) {
+				courses.iterate(Integer.parseInt(field[4].getText()));
+				draw();
+				clashes = courses.clashesLeft();
+				if (clashes < min) {
+					min = clashes;
+					step = iteration;
+				}
+			}
+			System.out.println("Shift = " + field[4].getText() + "\tMin clashes = " + min + "\tat step " + step);
+			setVisible(true);
+			break;
+		case 3:
 			courses.iterate(Integer.parseInt(field[4].getText()));
 			draw();
 			break;
-		case 3:
+		case 4:
 			System.out.println("Exam\tSlot\tClashes");
 			for (int i = 1; i < courses.length(); i++)
 				System.out.println(i + "\t" + courses.slot(i) + "\t" + courses.status(i));
 			break;
-		case 4:
+		case 5:
 			System.exit(0);
 		}
 	}
