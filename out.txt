@@ -1,0 +1,243 @@
+Loading file: car-f-92.stu
+Slot: 32
+
+Shift = 1 Iterations = 8	Min clashes = 39518	at step 8
+Shift = 1 Iterations = 128	Min clashes = 22066	at step 128
+Shift = 1 Iterations = 1024	Min clashes = 17934	at step 152
+Shift = 1 Iterations = 8196	Min clashes = 17934	at step 152
+
+Shift = 2 Iterations = 8	Min clashes = 14648	at step 8
+Shift = 2 Iterations = 128	Min clashes = 1730	at step 57
+Shift = 2 Iterations = 1024	Min clashes = 1730	at step 57
+Shift = 2 Iterations = 8196	Min clashes = 1730	at step 57
+
+Shift = 3 Iterations = 8	Min clashes = 5350	at step 8
+Shift = 3 Iterations = 128	Min clashes = 732	at step 83
+Shift = 3 Iterations = 1024	Min clashes = 732	at step 83
+Shift = 3 Iterations = 8196	Min clashes = 732	at step 83
+
+Shift = 4 Iterations = 8	Min clashes = 1538	at step 8
+Shift = 4 Iterations = 128	Min clashes = 526	at step 24
+Shift = 4 Iterations = 1024	Min clashes = 526	at step 24
+Shift = 4 Iterations = 8196	Min clashes = 526	at step 24
+
+Shift = 5 Iterations = 8	Min clashes = 1388	at step 8
+Shift = 5 Iterations = 128	Min clashes = 528	at step 54
+Shift = 5 Iterations = 1024	Min clashes = 528	at step 54
+Shift = 5 Iterations = 8196	Min clashes = 528	at step 54
+
+Shift = 6 Iterations = 8	Min clashes = 1240	at step 8
+Shift = 6 Iterations = 128	Min clashes = 200	at step 60
+Shift = 6 Iterations = 1024	Min clashes = 200	at step 60
+Shift = 6 Iterations = 8196	Min clashes = 200	at step 60
+
+Shift = 7 Iterations = 8	Min clashes = 914	at step 8
+Shift = 7 Iterations = 128	Min clashes = 376	at step 123
+Shift = 7 Iterations = 1024	Min clashes = 376	at step 123
+Shift = 7 Iterations = 8196	Min clashes = 376	at step 123
+
+Shift = 8 Iterations = 8	Min clashes = 778	at step 8
+Shift = 8 Iterations = 128	Min clashes = 366	at step 19
+Shift = 8 Iterations = 1024	Min clashes = 366	at step 19
+Shift = 8 Iterations = 8196	Min clashes = 366	at step 19
+
+Shift = 9 Iterations = 8	Min clashes = 660	at step 8
+Shift = 9 Iterations = 128	Min clashes = 346	at step 124
+Shift = 9 Iterations = 1024	Min clashes = 344	at step 190
+Shift = 9 Iterations = 8196	Min clashes = 344	at step 190
+
+Shift = 10 Iterations = 8	Min clashes = 738	at step 8
+Shift = 10 Iterations = 128	Min clashes = 150	at step 32
+Shift = 10 Iterations = 1024	Min clashes = 150	at step 32
+Shift = 10 Iterations = 8196	Min clashes = 150	at step 32
+
+Shift = 11 Iterations = 8	Min clashes = 558	at step 8
+Shift = 11 Iterations = 128	Min clashes = 304	at step 73
+Shift = 11 Iterations = 1024	Min clashes = 294	at step 181
+Shift = 11 Iterations = 8196	Min clashes = 294	at step 181
+
+Shift = 12 Iterations = 8	Min clashes = 498	at step 8
+Shift = 12 Iterations = 128	Min clashes = 128	at step 37
+Shift = 12 Iterations = 1024	Min clashes = 128	at step 37
+Shift = 12 Iterations = 8196	Min clashes = 128	at step 37
+
+Shift = 13 Iterations = 8	Min clashes = 478	at step 8
+Shift = 13 Iterations = 128	Min clashes = 322	at step 75
+Shift = 13 Iterations = 1024	Min clashes = 262	at step 218
+Shift = 13 Iterations = 8196	Min clashes = 262	at step 218
+
+Shift = 14 Iterations = 8	Min clashes = 504	at step 8
+Shift = 14 Iterations = 128	Min clashes = 112	at step 48
+Shift = 14 Iterations = 1024	Min clashes = 112	at step 48
+Shift = 14 Iterations = 8196	Min clashes = 112	at step 48
+
+Shift = 15 Iterations = 8	Min clashes = 380	at step 8
+Shift = 15 Iterations = 128	Min clashes = 254	at step 12
+Shift = 15 Iterations = 1024	Min clashes = 254	at step 12
+Shift = 15 Iterations = 8196	Min clashes = 242	at step 8163
+
+Shift = 16 Iterations = 8	Min clashes = 406	at step 8
+Shift = 16 Iterations = 128	Min clashes = 296	at step 15
+Shift = 16 Iterations = 1024	Min clashes = 296	at step 15
+Shift = 16 Iterations = 8196	Min clashes = 296	at step 15
+
+Shift = 17 Iterations = 8	Min clashes = 368	at step 6
+Shift = 17 Iterations = 128	Min clashes = 262	at step 66
+Shift = 17 Iterations = 1024	Min clashes = 236	at step 232
+Shift = 17 Iterations = 8196	Min clashes = 212	at step 7493
+
+Shift = 18 Iterations = 8	Min clashes = 332	at step 8
+Shift = 18 Iterations = 128	Min clashes = 124	at step 86
+Shift = 18 Iterations = 1024	Min clashes = 124	at step 86
+Shift = 18 Iterations = 8196	Min clashes = 124	at step 86
+
+Shift = 19 Iterations = 8	Min clashes = 290	at step 8
+Shift = 19 Iterations = 128	Min clashes = 252	at step 91
+Shift = 19 Iterations = 1024	Min clashes = 236	at step 351
+Shift = 19 Iterations = 8196	Min clashes = 180	at step 3263
+
+Shift = 20 Iterations = 8	Min clashes = 272	at step 8
+Shift = 20 Iterations = 128	Min clashes = 116	at step 28
+Shift = 20 Iterations = 1024	Min clashes = 116	at step 28
+Shift = 20 Iterations = 8196	Min clashes = 116	at step 28
+
+Shift = 21 Iterations = 8	Min clashes = 378	at step 8
+Shift = 21 Iterations = 128	Min clashes = 242	at step 11
+Shift = 21 Iterations = 1024	Min clashes = 198	at step 325
+Shift = 21 Iterations = 8196	Min clashes = 198	at step 325
+
+Shift = 22 Iterations = 8	Min clashes = 256	at step 7
+Shift = 22 Iterations = 128	Min clashes = 124	at step 98
+Shift = 22 Iterations = 1024	Min clashes = 96	at step 644
+Shift = 22 Iterations = 8196	Min clashes = 96	at step 644
+
+Shift = 23 Iterations = 8	Min clashes = 276	at step 8
+Shift = 23 Iterations = 128	Min clashes = 202	at step 10
+Shift = 23 Iterations = 1024	Min clashes = 202	at step 10
+Shift = 23 Iterations = 8196	Min clashes = 170	at step 4853
+
+Shift = 24 Iterations = 8	Min clashes = 286	at step 8
+Shift = 24 Iterations = 128	Min clashes = 246	at step 28
+Shift = 24 Iterations = 1024	Min clashes = 246	at step 28
+Shift = 24 Iterations = 8196	Min clashes = 246	at step 28
+
+Shift = 25 Iterations = 8	Min clashes = 338	at step 8
+Shift = 25 Iterations = 128	Min clashes = 232	at step 119
+Shift = 25 Iterations = 1024	Min clashes = 186	at step 592
+Shift = 25 Iterations = 8196	Min clashes = 160	at step 5171
+
+Shift = 26 Iterations = 8	Min clashes = 326	at step 7
+Shift = 26 Iterations = 128	Min clashes = 102	at step 104
+Shift = 26 Iterations = 1024	Min clashes = 94	at step 347
+Shift = 26 Iterations = 8196	Min clashes = 94	at step 347
+
+Shift = 27 Iterations = 8	Min clashes = 390	at step 8
+Shift = 27 Iterations = 128	Min clashes = 196	at step 97
+Shift = 27 Iterations = 1024	Min clashes = 168	at step 837
+Shift = 27 Iterations = 8196	Min clashes = 156	at step 7370
+
+Shift = 28 Iterations = 8	Min clashes = 320	at step 8
+Shift = 28 Iterations = 128	Min clashes = 120	at step 13
+Shift = 28 Iterations = 1024	Min clashes = 120	at step 13
+Shift = 28 Iterations = 8196	Min clashes = 120	at step 13
+
+Shift = 29 Iterations = 8	Min clashes = 388	at step 8
+Shift = 29 Iterations = 128	Min clashes = 200	at step 58
+Shift = 29 Iterations = 1024	Min clashes = 174	at step 331
+Shift = 29 Iterations = 8196	Min clashes = 152	at step 1513
+
+Shift = 30 Iterations = 8	Min clashes = 266	at step 8
+Shift = 30 Iterations = 128	Min clashes = 98	at step 97
+Shift = 30 Iterations = 1024	Min clashes = 86	at step 335
+Shift = 30 Iterations = 8196	Min clashes = 86	at step 335
+
+Shift = 31 Iterations = 8	Min clashes = 294	at step 7
+Shift = 31 Iterations = 128	Min clashes = 178	at step 16
+Shift = 31 Iterations = 1024	Min clashes = 172	at step 705
+Shift = 31 Iterations = 8196	Min clashes = 156	at step 6298
+
+Shift = 32 Iterations = 8	Min clashes = 520	at step 1
+Shift = 32 Iterations = 128	Min clashes = 520	at step 1
+Shift = 32 Iterations = 1024	Min clashes = 520	at step 1
+Shift = 32 Iterations = 8196	Min clashes = 520	at step 1
+Loading file: car-f-92.stu
+Slot: 31
+
+Shift = 1 Iterations = 8	Min clashes = 39518	at step 8
+Shift = 1 Iterations = 128	Min clashes = 22088	at step 128
+Shift = 1 Iterations = 1024	Min clashes = 17998	at step 152
+Shift = 1 Iterations = 8196	Min clashes = 17998	at step 152
+
+Shift = 2 Iterations = 8	Min clashes = 14648	at step 8
+Shift = 2 Iterations = 128	Min clashes = 954	at step 87
+Shift = 2 Iterations = 1024	Min clashes = 954	at step 87
+Shift = 2 Iterations = 8196	Min clashes = 954	at step 87
+
+Shift = 3 Iterations = 8	Min clashes = 5350	at step 8
+Shift = 3 Iterations = 128	Min clashes = 756	at step 106
+Shift = 3 Iterations = 1024	Min clashes = 756	at step 106
+Shift = 3 Iterations = 8196	Min clashes = 756	at step 106
+
+Shift = 4 Iterations = 8	Min clashes = 2148	at step 8
+Shift = 4 Iterations = 128	Min clashes = 660	at step 88
+Shift = 4 Iterations = 1024	Min clashes = 660	at step 88
+Shift = 4 Iterations = 8196	Min clashes = 660	at step 88
+
+Shift = 5 Iterations = 8	Min clashes = 1488	at step 8
+Shift = 5 Iterations = 128	Min clashes = 608	at step 110
+Shift = 5 Iterations = 1024	Min clashes = 608	at step 110
+Shift = 5 Iterations = 8196	Min clashes = 546	at step 2631
+
+Shift = 6 Iterations = 8	Min clashes = 1310	at step 8
+Shift = 6 Iterations = 128	Min clashes = 522	at step 91
+Shift = 6 Iterations = 1024	Min clashes = 480	at step 175
+Shift = 6 Iterations = 8196	Min clashes = 480	at step 175
+
+Shift = 7 Iterations = 8	Min clashes = 1120	at step 8
+Shift = 7 Iterations = 128	Min clashes = 538	at step 107
+Shift = 7 Iterations = 1024	Min clashes = 538	at step 107
+Shift = 7 Iterations = 8196	Min clashes = 538	at step 107
+
+Shift = 8 Iterations = 8	Min clashes = 844	at step 8
+Shift = 8 Iterations = 128	Min clashes = 500	at step 123
+Shift = 8 Iterations = 1024	Min clashes = 460	at step 473
+Shift = 8 Iterations = 8196	Min clashes = 460	at step 473
+
+Shift = 9 Iterations = 8	Min clashes = 920	at step 8
+Shift = 9 Iterations = 128	Min clashes = 404	at step 105
+Shift = 9 Iterations = 1024	Min clashes = 374	at step 368
+Shift = 9 Iterations = 8196	Min clashes = 374	at step 368
+
+Shift = 10 Iterations = 8	Min clashes = 806	at step 7
+Shift = 10 Iterations = 128	Min clashes = 426	at step 128
+Shift = 10 Iterations = 1024	Min clashes = 356	at step 886
+Shift = 10 Iterations = 8196	Min clashes = 316	at step 1409
+
+Shift = 11 Iterations = 8	Min clashes = 830	at step 8
+Shift = 11 Iterations = 128	Min clashes = 330	at step 65
+Shift = 11 Iterations = 1024	Min clashes = 292	at step 277
+Shift = 11 Iterations = 8196	Min clashes = 292	at step 277
+
+Shift = 12 Iterations = 8	Min clashes = 618	at step 7
+Shift = 12 Iterations = 128	Min clashes = 372	at step 118
+Shift = 12 Iterations = 1024	Min clashes = 310	at step 554
+Shift = 12 Iterations = 8196	Min clashes = 310	at step 554
+
+Shift = 13 Iterations = 8	Min clashes = 600	at step 7
+Shift = 13 Iterations = 128	Min clashes = 328	at step 122
+Shift = 13 Iterations = 1024	Min clashes = 310	at step 812
+Shift = 13 Iterations = 8196	Min clashes = 298	at step 2176
+
+Shift = 14 Iterations = 8	Min clashes = 554	at step 7
+Shift = 14 Iterations = 128	Min clashes = 306	at step 74
+Shift = 14 Iterations = 1024	Min clashes = 294	at step 412
+Shift = 14 Iterations = 8196	Min clashes = 294	at step 412
+
+Shift = 15 Iterations = 8	Min clashes = 538	at step 8
+Shift = 15 Iterations = 128	Min clashes = 310	at step 119
+Shift = 15 Iterations = 1024	Min clashes = 288	at step 479
+Shift = 15 Iterations = 8196	Min clashes = 274	at step 1075
+
+Shift = 16 Iterations = 8	Min clashes = 544	at step 8
+Shift = 16 Iterations = 128	Min clashes = 292	at step 72
+Shift = 16 Iterations = 1024	Min clashes = 264	at step 387

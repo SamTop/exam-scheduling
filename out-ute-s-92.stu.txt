@@ -1,0 +1,162 @@
+Loading file: ute-s-92.stu
+Slot: 11
+Shift = 1 Iterations = 8	Min clashes = 988	at step 8
+Shift = 1 Iterations = 128	Min clashes = 434	at step 22
+Shift = 1 Iterations = 1024	Min clashes = 434	at step 22
+Shift = 1 Iterations = 8196	Min clashes = 434	at step 22
+Shift = 2 Iterations = 8	Min clashes = 76	at step 5
+Shift = 2 Iterations = 128	Min clashes = 12	at step 14
+Shift = 2 Iterations = 1024	Min clashes = 12	at step 14
+Shift = 2 Iterations = 8196	Min clashes = 12	at step 14
+Shift = 3 Iterations = 8	Min clashes = 0	at step 6
+Shift = 4 Iterations = 8	Min clashes = 0	at step 6
+Shift = 5 Iterations = 8	Min clashes = 0	at step 4
+Shift = 6 Iterations = 8	Min clashes = 0	at step 3
+Shift = 7 Iterations = 8	Min clashes = 0	at step 2
+Shift = 8 Iterations = 8	Min clashes = 0	at step 2
+Shift = 9 Iterations = 8	Min clashes = 0	at step 2
+Shift = 10 Iterations = 8	Min clashes = 0	at step 2
+Shift = 11 Iterations = 8	Min clashes = 0	at step 1
+Loading file: ute-s-92.stu
+Slot: 10
+Shift = 1 Iterations = 8	Min clashes = 988	at step 8
+Shift = 1 Iterations = 128	Min clashes = 478	at step 22
+Shift = 1 Iterations = 1024	Min clashes = 478	at step 22
+Shift = 1 Iterations = 8196	Min clashes = 478	at step 22
+Shift = 2 Iterations = 8	Min clashes = 50	at step 8
+Shift = 2 Iterations = 128	Min clashes = 14	at step 17
+Shift = 2 Iterations = 1024	Min clashes = 14	at step 17
+Shift = 2 Iterations = 8196	Min clashes = 14	at step 17
+Shift = 3 Iterations = 8	Min clashes = 24	at step 8
+Shift = 3 Iterations = 128	Min clashes = 2	at step 109
+Shift = 3 Iterations = 1024	Min clashes = 2	at step 109
+Shift = 3 Iterations = 8196	Min clashes = 2	at step 109
+Shift = 4 Iterations = 8	Min clashes = 2	at step 5
+Shift = 4 Iterations = 128	Min clashes = 0	at step 27
+Shift = 5 Iterations = 8	Min clashes = 2	at step 4
+Shift = 5 Iterations = 128	Min clashes = 2	at step 4
+Shift = 5 Iterations = 1024	Min clashes = 2	at step 4
+Shift = 5 Iterations = 8196	Min clashes = 2	at step 4
+Shift = 6 Iterations = 8	Min clashes = 2	at step 7
+Shift = 6 Iterations = 128	Min clashes = 2	at step 7
+Shift = 6 Iterations = 1024	Min clashes = 2	at step 7
+Shift = 6 Iterations = 8196	Min clashes = 2	at step 7
+Shift = 7 Iterations = 8	Min clashes = 0	at step 5
+Shift = 8 Iterations = 8	Min clashes = 0	at step 5
+Shift = 9 Iterations = 8	Min clashes = 0	at step 3
+Shift = 10 Iterations = 8	Min clashes = 2	at step 1
+Shift = 10 Iterations = 128	Min clashes = 2	at step 1
+Shift = 10 Iterations = 1024	Min clashes = 2	at step 1
+Shift = 10 Iterations = 8196	Min clashes = 2	at step 1
+
+
+Loading file: ute-s-92.stu
+Slot: 9
+Shift = 1 Iterations = 8	Min clashes = 988	at step 8
+Shift = 1 Iterations = 128	Min clashes = 526	at step 21
+Shift = 1 Iterations = 1024	Min clashes = 526	at step 21
+Shift = 1 Iterations = 8196	Min clashes = 526	at step 21
+Shift = 2 Iterations = 8	Min clashes = 102	at step 8
+Shift = 2 Iterations = 128	Min clashes = 68	at step 27
+Shift = 2 Iterations = 1024	Min clashes = 68	at step 27
+Shift = 2 Iterations = 8196	Min clashes = 68	at step 27
+Shift = 3 Iterations = 8	Min clashes = 14	at step 8
+Shift = 3 Iterations = 128	Min clashes = 14	at step 8
+Shift = 3 Iterations = 1024	Min clashes = 14	at step 8
+Shift = 3 Iterations = 8196	Min clashes = 14	at step 8
+Shift = 4 Iterations = 8	Min clashes = 8	at step 8
+Shift = 4 Iterations = 128	Min clashes = 6	at step 13
+Shift = 4 Iterations = 1024	Min clashes = 6	at step 13
+Shift = 4 Iterations = 8196	Min clashes = 4	at step 2819
+Shift = 5 Iterations = 8	Min clashes = 12	at step 3
+Shift = 5 Iterations = 128	Min clashes = 12	at step 3
+Shift = 5 Iterations = 1024	Min clashes = 12	at step 3
+Shift = 5 Iterations = 8196	Min clashes = 2	at step 4267
+Shift = 6 Iterations = 8	Min clashes = 4	at step 5
+Shift = 6 Iterations = 128	Min clashes = 4	at step 5
+Shift = 6 Iterations = 1024	Min clashes = 4	at step 5
+Shift = 6 Iterations = 8196	Min clashes = 4	at step 5
+Shift = 7 Iterations = 8	Min clashes = 6	at step 4
+Shift = 7 Iterations = 128	Min clashes = 6	at step 4
+Shift = 7 Iterations = 1024	Min clashes = 2	at step 500
+Shift = 7 Iterations = 8196	Min clashes = 2	at step 500
+Shift = 8 Iterations = 8	Min clashes = 6	at step 5
+Shift = 8 Iterations = 128	Min clashes = 2	at step 23
+Shift = 8 Iterations = 1024	Min clashes = 2	at step 23
+Shift = 8 Iterations = 8196	Min clashes = 2	at step 23
+Shift = 9 Iterations = 8	Min clashes = 10	at step 1
+Shift = 9 Iterations = 128	Min clashes = 10	at step 1
+Shift = 9 Iterations = 1024	Min clashes = 10	at step 1
+Shift = 9 Iterations = 8196	Min clashes = 10	at step 1
+
+
+Loading file: ute-s-92.stu
+Slot: 8
+Shift = 1 Iterations = 8	Min clashes = 1012	at step 8
+Shift = 1 Iterations = 128	Min clashes = 580	at step 21
+Shift = 1 Iterations = 1024	Min clashes = 580	at step 21
+Shift = 1 Iterations = 8196	Min clashes = 580	at step 21
+Shift = 2 Iterations = 8	Min clashes = 92	at step 8
+Shift = 2 Iterations = 128	Min clashes = 64	at step 23
+Shift = 2 Iterations = 1024	Min clashes = 64	at step 23
+Shift = 2 Iterations = 8196	Min clashes = 64	at step 23
+Shift = 3 Iterations = 8	Min clashes = 78	at step 7
+Shift = 3 Iterations = 128	Min clashes = 50	at step 10
+Shift = 3 Iterations = 1024	Min clashes = 50	at step 10
+Shift = 3 Iterations = 8196	Min clashes = 50	at step 10
+Shift = 4 Iterations = 8	Min clashes = 24	at step 8
+Shift = 4 Iterations = 128	Min clashes = 24	at step 8
+Shift = 4 Iterations = 1024	Min clashes = 24	at step 8
+Shift = 4 Iterations = 8196	Min clashes = 24	at step 8
+Shift = 5 Iterations = 8	Min clashes = 28	at step 8
+Shift = 5 Iterations = 128	Min clashes = 26	at step 79
+Shift = 5 Iterations = 1024	Min clashes = 24	at step 148
+Shift = 5 Iterations = 8196	Min clashes = 24	at step 148
+Shift = 6 Iterations = 8	Min clashes = 22	at step 7
+Shift = 6 Iterations = 128	Min clashes = 16	at step 36
+Shift = 6 Iterations = 1024	Min clashes = 16	at step 36
+Shift = 6 Iterations = 8196	Min clashes = 16	at step 36
+Shift = 7 Iterations = 8	Min clashes = 26	at step 3
+Shift = 7 Iterations = 128	Min clashes = 18	at step 21
+Shift = 7 Iterations = 1024	Min clashes = 14	at step 205
+Shift = 7 Iterations = 8196	Min clashes = 10	at step 1418
+Shift = 8 Iterations = 8	Min clashes = 24	at step 1
+Shift = 8 Iterations = 128	Min clashes = 24	at step 1
+Shift = 8 Iterations = 1024	Min clashes = 24	at step 1
+Shift = 8 Iterations = 8196	Min clashes = 24	at step 1
+Loading file: ute-s-92.stu
+Slot: 7
+Shift = 1 Iterations = 8	Min clashes = 1038	at step 8
+Shift = 1 Iterations = 128	Min clashes = 660	at step 19
+Shift = 1 Iterations = 1024	Min clashes = 660	at step 19
+Shift = 1 Iterations = 8196	Min clashes = 660	at step 19
+
+Shift = 2 Iterations = 8	Min clashes = 256	at step 3
+Shift = 2 Iterations = 128	Min clashes = 104	at step 34
+Shift = 2 Iterations = 1024	Min clashes = 104	at step 34
+Shift = 2 Iterations = 8196	Min clashes = 104	at step 34
+
+Shift = 3 Iterations = 8	Min clashes = 158	at step 8
+Shift = 3 Iterations = 128	Min clashes = 120	at step 19
+Shift = 3 Iterations = 1024	Min clashes = 118	at step 243
+Shift = 3 Iterations = 8196	Min clashes = 118	at step 243
+
+Shift = 4 Iterations = 8	Min clashes = 92	at step 5
+Shift = 4 Iterations = 128	Min clashes = 84	at step 104
+Shift = 4 Iterations = 1024	Min clashes = 84	at step 104
+Shift = 4 Iterations = 8196	Min clashes = 82	at step 6000
+
+Shift = 5 Iterations = 8	Min clashes = 106	at step 5
+Shift = 5 Iterations = 128	Min clashes = 66	at step 104
+Shift = 5 Iterations = 1024	Min clashes = 66	at step 104
+Shift = 5 Iterations = 8196	Min clashes = 66	at step 104
+
+Shift = 6 Iterations = 8	Min clashes = 82	at step 8
+Shift = 6 Iterations = 128	Min clashes = 46	at step 101
+Shift = 6 Iterations = 1024	Min clashes = 46	at step 101
+Shift = 6 Iterations = 8196	Min clashes = 46	at step 101
+
+Shift = 7 Iterations = 8	Min clashes = 56	at step 1
+Shift = 7 Iterations = 128	Min clashes = 56	at step 1
+Shift = 7 Iterations = 1024	Min clashes = 56	at step 1
+Shift = 7 Iterations = 8196	Min clashes = 56	at step 1
