@@ -84,8 +84,27 @@ public class CourseArray {
         }
     }
 
+    public int[] slotStatus(int slot){
+        int[] result = new int[2];
+        int clashes = 0;
+        int course = 0;
+        for (int i = 1;i<elements.length;i++){
+            if(elements[i].mySlot == slot){
+                course++;
+                clashes+=elements[i].clashSize();
+            }
+        }
+        result[0] = course;
+        result[1] = clashes;
+        return  result;
+    }
+
     public void printResult() {
         for (int i = 1; i < elements.length; i++)
             System.out.println(i + "\t" + elements[i].mySlot);
+    }
+
+    public int getPeriod() {
+        return period;
     }
 }

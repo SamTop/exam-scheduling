@@ -12,9 +12,12 @@ public class TimeTable extends JFrame implements ActionListener {
     private CourseArray courses;
     private Color CRScolor[] = {Color.RED, Color.GREEN, Color.BLACK};
     private AutoAssociator associator;
+    private int[][] minStateSlotStats;
+    private int[][] minState;
 
     public TimeTable() throws IOException {
         super("Dynamic Time Table");
+
         setSize(500, 800);
         setLayout(new FlowLayout());
 
@@ -28,7 +31,7 @@ public class TimeTable extends JFrame implements ActionListener {
     }
 
     public void setTools() {
-        String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:"};
+        String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:"};
         field = new JTextField[capField.length];
 
         String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Print", "Exit"};
@@ -48,7 +51,7 @@ public class TimeTable extends JFrame implements ActionListener {
             tools.add(tool[i]);
         }
 
-        field[0].setText("10");
+        field[0].setText("8");
         field[1].setText("184");
         field[2].setText("ute-s-92.stu");
         field[3].setText("1");
@@ -80,11 +83,8 @@ public class TimeTable extends JFrame implements ActionListener {
                 courses = new CourseArray(Integer.parseInt(field[1].getText()) + 1, slots);
                 courses.readClashes("data/" + field[2].getText());
                 associator = new AutoAssociator(courses);
-                try {
-                    Serializer.writeToFile("cache/cache.txt", associator);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+                minState = new int[courses.getPeriod()][courses.length()];
+                minStateSlotStats = new int[courses.getPeriod()][2];
 
                 draw();
                 break;
@@ -100,9 +100,11 @@ public class TimeTable extends JFrame implements ActionListener {
                     if (clashes < min) {
                         min = clashes;
                         step = iteration;
+                        whenMinFound();
                     }
                 }
                 System.out.println("Iters = " + field[3].getText() + " Shift = " + field[4].getText() + "\tMin clashes = " + min + "\tat step " + step);
+                whenIterationsEnded();
                 setVisible(true);
                 break;
             case 2:
@@ -116,9 +118,11 @@ public class TimeTable extends JFrame implements ActionListener {
                     if (clashes < min) {
                         min = clashes;
                         step = iteration;
+                        whenMinFound();
                     }
                 }
                 System.out.println("Iters = " + field[3].getText() + " Shift = " + field[4].getText() + "\tMin clashes = " + min + "\tat step " + step);
+                whenIterationsEnded();
                 setVisible(true);
                 break;
             case 3:
@@ -138,8 +142,42 @@ public class TimeTable extends JFrame implements ActionListener {
         }
     }
 
-    public void train() {
+    public void calcSlotStats() {
+        for (int i = 0; i < courses.getPeriod(); ++i) {
+            minStateSlotStats[i] = courses.slotStatus(i);
+        }
+    }
 
+    public void printSlotStats() {
+        for (int i = 0; i < minStateSlotStats.length; i++) {
+            System.out.println("Slot: " + i + "\t" + minStateSlotStats[i][0] + "\t" + minStateSlotStats[i][1]);
+        }
+    }
+
+    public void memorizeMinState() {
+        for (int s = 0; s < courses.getPeriod(); s++) {
+            for (int i = 1; i < courses.length(); i++) {
+                minState[s][i] = -1;
+            }
+        }
+
+        for (int i = 1; i < courses.length(); i++) {
+            minState[courses.slot(i)][i] = 1;
+        }
+    }
+
+    public void whenMinFound() {
+        memorizeMinState();
+        calcSlotStats();
+    }
+
+    public void whenIterationsEnded() {
+        printSlotStats();
+    }
+
+    public void train() {
+        associator.training(minState[Integer.parseInt(field[5].getText())]);
+        System.out.println("Completed " + associator.getTrainCounter() + " trainings");
     }
 
     public static void main(String[] args) throws IOException {

@@ -5,7 +5,7 @@ public class AutoAssociator {
     private int trainingCapacity;
 
     private int trainCounter;
-    private CourseArray courseArray;
+    private transient CourseArray courseArray;
 
     public AutoAssociator(CourseArray courses) {
         // creates a new Hopfield network with the same number of neurons
@@ -15,13 +15,22 @@ public class AutoAssociator {
         trainCounter = 0;
     }
 
+    public AutoAssociator() {
+        trainCounter = 0;
+        weights = null;
+    }
+
+    public void setCourseArray(CourseArray courses) {
+        courseArray = courses;
+    }
+
     public int getTrainingCapacity() {
         return weights.length;
     }
 
-    public void training(int pattern[]) {
+    public void training(int[] pattern) {
         for (int i = 1; i < weights.length; i++) {
-            for (int j = 1; i < weights[i].length; j++) {
+            for (int j = 1; j < weights[i].length; j++) {
                 if (i == j) {
                     weights[i][j] = 0;
                 } else {
@@ -29,6 +38,8 @@ public class AutoAssociator {
                 }
             }
         }
+        ++trainCounter;
+        Serializer.writeToFile(this);
     }
 
     public int unitUpdate(int[] neurons) {
@@ -59,6 +70,10 @@ public class AutoAssociator {
 
     public boolean needTrain() {
         return trainCounter <= weights.length * 0.139;
+    }
+
+    public int getTrainCounter() {
+        return trainCounter;
     }
 
 }
