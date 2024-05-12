@@ -93,9 +93,9 @@ public class Tests extends JFrame implements ActionListener {
     }
 
     public void test() {
-        String[] files = {"ute-s-92.stu"};
-        int[] courseNums = {184};
-        int[] slotNumbers = {12, 11, 10, 9, 8};
+        String[] files = {"car-f-92.stu"};
+        int[] courseNums = {543};
+        int[] slotNumbers = {31, 30, 29};
         int[] iterations = {8, 128, 1024, 8196};
 
         for (int i = 0; i < files.length; ++i) {
@@ -103,6 +103,8 @@ public class Tests extends JFrame implements ActionListener {
                 load(slotNum, courseNums[i], files[i]);
 
                 for (int shift = 1; shift <= slotNum; ++shift) {
+                    if (slotNum == 31 && shift < 16) shift = 16;
+
                     System.out.println();
                     for (int iter : iterations) {
                         reset();

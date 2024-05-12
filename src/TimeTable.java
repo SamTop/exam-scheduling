@@ -3,6 +3,7 @@ import java.awt.event.*;
 import java.io.IOException;
 import java.io.Serial;
 import javax.swing.*;
+import java.util.Random;
 
 public class TimeTable extends JFrame implements ActionListener {
 
@@ -14,6 +15,7 @@ public class TimeTable extends JFrame implements ActionListener {
     private AutoAssociator associator;
     private int[][] minStateSlotStats;
     private int[][] minState;
+    private final Random random = new Random();
 
     public TimeTable() throws IOException {
         super("Dynamic Time Table");
@@ -34,7 +36,7 @@ public class TimeTable extends JFrame implements ActionListener {
         String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:"};
         field = new JTextField[capField.length];
 
-        String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Print", "Exit"};
+        String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Update", "Print", "Exit"};
         tool = new JButton[capButton.length];
 
         tools.setLayout(new GridLayout(2 * capField.length + capButton.length, 1));
@@ -133,11 +135,22 @@ public class TimeTable extends JFrame implements ActionListener {
                 train();
                 break;
             case 5:
+                for (int i = 0; i < courses.getPeriod(); i++) {
+                    if (courses.slotStatus(i)[1] == 0) {
+                        continue;
+                    }
+                    update(i);
+                }
+                clashes = courses.clashesLeft();
+                System.out.println("Clashes " + clashes);
+                draw();
+                break;
+            case 6:
                 System.out.println("Exam\tSlot\tClashes");
                 for (int i = 1; i < courses.length(); i++)
                     System.out.println(i + "\t" + courses.slot(i) + "\t" + courses.status(i));
                 break;
-            case 6:
+            case 7:
                 System.exit(0);
         }
     }
@@ -178,6 +191,19 @@ public class TimeTable extends JFrame implements ActionListener {
     public void train() {
         associator.training(minState[Integer.parseInt(field[5].getText())]);
         System.out.println("Completed " + associator.getTrainCounter() + " trainings");
+    }
+
+    public void update(int slot) {
+        int[] timeSlots = courses.getTimeSlot(slot);
+        int index = associator.unitUpdate(timeSlots);
+        int[] tempSlots = courses.getTimeSlot(slot);
+        if (timeSlots[index] != tempSlots[index]) {
+            if (timeSlots[index] == 1) {
+                courses.setSlot(index, slot);
+            } else {
+                courses.setSlot(index, random.nextInt(courses.getPeriod() + 1) - 1);
+            }
+        }
     }
 
     public static void main(String[] args) throws IOException {

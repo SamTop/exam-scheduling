@@ -44,7 +44,7 @@ public class AutoAssociator {
 
     public int unitUpdate(int[] neurons) {
         var random = new Random();
-        int index = random.nextInt(neurons.length);
+        int index = random.nextInt(1, neurons.length);
         unitUpdate(neurons, index);
         return index;
     }
