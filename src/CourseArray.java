@@ -59,6 +59,9 @@ public class CourseArray {
     }
 
     public void setSlot(int index, int newSlot) {
+        if (newSlot < 0) {
+            System.out.println("Error");
+        }
         elements[index].mySlot = newSlot;
     }
 

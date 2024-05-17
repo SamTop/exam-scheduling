@@ -1,7 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
-import java.io.Serial;
 import javax.swing.*;
 import java.util.Random;
 
@@ -16,6 +15,8 @@ public class TimeTable extends JFrame implements ActionListener {
     private int[][] minStateSlotStats;
     private int[][] minState;
     private final Random random = new Random();
+
+    private static int magicIterationIdx = 0;
 
     public TimeTable() throws IOException {
         super("Dynamic Time Table");
@@ -33,10 +34,10 @@ public class TimeTable extends JFrame implements ActionListener {
     }
 
     public void setTools() {
-        String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:", "ReadCache:"};
+        String[] capField = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:", "ReadCache:"};
         field = new JTextField[capField.length];
 
-        String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Update", "LoacCache", "Print", "Exit"};
+        String[] capButton = {"Load", "Start", "Cont", "Step", "Train", "Update", "LoacCache", "Print", "Magic", "Exit"};
         tool = new JButton[capButton.length];
 
         tools.setLayout(new GridLayout(2 * capField.length + capButton.length, 2));
@@ -147,6 +148,7 @@ public class TimeTable extends JFrame implements ActionListener {
                 break;
             case 6:
                 associator = Serializer.readFromFile(1);
+                System.out.println("Read");
                 break;
             case 7:
                 System.out.println("Exam\tSlot\tClashes");
@@ -154,6 +156,9 @@ public class TimeTable extends JFrame implements ActionListener {
                     System.out.println(i + "\t" + courses.slot(i) + "\t" + courses.status(i));
                 break;
             case 8:
+                doMagic();
+                break;
+            case 9:
                 System.exit(0);
         }
     }
@@ -204,12 +209,89 @@ public class TimeTable extends JFrame implements ActionListener {
             if (timeSlots[index] == 1) {
                 courses.setSlot(index, slot);
             } else {
-                courses.setSlot(index, random.nextInt(courses.getPeriod() + 1) - 1);
+                courses.setSlot(index, random.nextInt(1, courses.getPeriod() + 1) - 1);
             }
         }
+    }
+
+    public Tuple<Integer, Integer> iterate(int iterations, int shift) {
+        int clashes = 0;
+        int step = -1;
+        int min = Integer.MAX_VALUE;
+
+        for (int iteration = 1; iteration <= iterations; iteration++) {
+            courses.iterate(shift);
+            draw();
+            clashes = courses.clashesLeft();
+            if (clashes < min) {
+                min = clashes;
+                step = iteration;
+            }
+        }
+
+        return new Tuple<Integer, Integer>(min, step);
+    }
+
+    public void doMagic() {
+        int min = Integer.MAX_VALUE;
+        int iteration;
+        int shift;
+        int minFoundAtStep, currentStep = 0;
+        int updateCounter = courses.getPeriod();
+
+        while (true) {
+            currentStep++;
+            iteration = getNextIteration();
+            shift = getShift();
+
+            System.out.println("Iterations: " + iteration + " Shift: " + shift);
+            var t = iterate(iteration, shift);
+            var newMin = t.x();
+            var newStep = t.y();
+            if (newMin <= min) {
+                System.out.println("Found new min: " + newMin + " at step: " + newStep);
+                min = newMin;
+                minFoundAtStep = newStep;
+                if (min <= 0) {
+                    System.out.println("Found min 0 state at total step: " + currentStep);
+                    courses.printResult();
+                    whenMinFound();
+                    printSlotStats();
+                    break;
+                }
+                whenMinFound();
+            } else {
+                System.out.println("Iteration min clashes: " + newMin + " at step: " + newStep);
+            }
+            Helpers.log("mins.txt", newMin + ",");
+
+            System.out.print("Updating Slots: ");
+            for (int i = 0; i < updateCounter; i++) {
+                int slot = random.nextInt(courses.getPeriod());
+//                if (courses.slotStatus(slot)[1] == 0) {
+//                    --i;
+//                    continue;
+//                }
+                System.out.print(slot + ", ");
+                update(slot);
+            }
+            System.out.println();
+            updateCounter += courses.getPeriod() / 4;
+        }
+
+    }
+
+    public static int getNextIteration() {
+        int[] iterations = { 100, 200, 300, 400, 500, 700, 1000, 1200, 1500, 1700, 2000, 2200, 2500, 2700, 3000 };
+        return iterations[magicIterationIdx++ % iterations.length];
+    }
+
+    public int getShift() {
+        return random.nextInt(2, courses.getPeriod() - 1);
     }
 
     public static void main(String[] args) throws IOException {
         new TimeTable();
     }
 }
+

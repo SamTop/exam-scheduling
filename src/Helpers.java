@@ -1,4 +1,6 @@
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Helpers {
@@ -46,6 +48,22 @@ public class Helpers {
                     fileHandler.close();
                 } catch (IOException e) {
                 }
+        }
+    }
+
+    public static void log(String filename, String str) {
+        String path = "logs/" + filename;
+
+        try {
+            FileWriter fileWriter = new FileWriter(path,true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+            bufferedWriter.write(str);
+            bufferedWriter.newLine();
+            bufferedWriter.close(); // Always remember to close the writer
+
+        } catch (IOException e) {
+            System.err.println("Error writing to the file: " + e.getMessage());
         }
     }
 
