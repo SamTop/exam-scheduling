@@ -20,10 +20,10 @@ public class TimeTable extends JFrame implements ActionListener {
     public TimeTable() throws IOException {
         super("Dynamic Time Table");
 
-        setSize(500, 800);
+        setSize(800, 800);
         setLayout(new FlowLayout());
 
-        screen.setPreferredSize(new Dimension(400, 800));
+        screen.setPreferredSize(new Dimension(500, 800));
         add(screen);
 
         setTools();
@@ -33,13 +33,13 @@ public class TimeTable extends JFrame implements ActionListener {
     }
 
     public void setTools() {
-        String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:"};
+        String capField[] = {"Slots:", "Courses:", "Clash File:", "Iters:", "Shift:", "Trainslot:", "ReadCache:"};
         field = new JTextField[capField.length];
 
-        String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Update", "Print", "Exit"};
+        String capButton[] = {"Load", "Start", "Cont", "Step", "Train", "Update", "LoacCache", "Print", "Exit"};
         tool = new JButton[capButton.length];
 
-        tools.setLayout(new GridLayout(2 * capField.length + capButton.length, 1));
+        tools.setLayout(new GridLayout(2 * capField.length + capButton.length, 2));
 
         for (int i = 0; i < field.length; i++) {
             tools.add(new JLabel(capField[i]));
@@ -146,11 +146,14 @@ public class TimeTable extends JFrame implements ActionListener {
                 draw();
                 break;
             case 6:
+                associator = Serializer.readFromFile(1);
+                break;
+            case 7:
                 System.out.println("Exam\tSlot\tClashes");
                 for (int i = 1; i < courses.length(); i++)
                     System.out.println(i + "\t" + courses.slot(i) + "\t" + courses.status(i));
                 break;
-            case 7:
+            case 8:
                 System.exit(0);
         }
     }
