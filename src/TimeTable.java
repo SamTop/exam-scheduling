@@ -54,9 +54,9 @@ public class TimeTable extends JFrame implements ActionListener {
             tools.add(tool[i]);
         }
 
-        field[0].setText("8");
-        field[1].setText("184");
-        field[2].setText("ute-s-92.stu");
+        field[0].setText("30");
+        field[1].setText("543");
+        field[2].setText("car-f-92.stu");
         field[3].setText("1");
     }
 

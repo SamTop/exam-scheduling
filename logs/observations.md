@@ -221,7 +221,7 @@ The larger the iterations, more chances to make min clashes smaller.
 Interestingly, sometimes, on large dataset minimum values are obtained with a shift which is not coprime with slot numbers.
 
 
-# Hopfield update observations
+# Manual testing results. Hopfield update observations
 
 With current manual testing, min clashes are increasing after update.
 Currently, after update we choose the slot to set 1 randomly. Maybe other strategies will perform better.
@@ -234,3 +234,10 @@ In the future, have plans to implement progressive testing.
 The idea is to start basic testing. Whenever the min is not changed long enough, we should do update once, for example,
 then continue testing, possibly changing shift also. After the min is not changed again, we should do update twice. 
 This way, the longer we have no results, the more we are ready to alter the state of the system.
+
+# Automatic testing (Magic button) 
+
+This button does the progressive testing. Does some number of iterations, and if the min is not changed
+does several updates based on Hopfield network. The number of updates increases progressively.
+The network was trained on "good" slots. With this implementation, leaving overnight, I was able to reach state with 
+106 clashes for file "car-f-92.stu" with 30 slots. 
