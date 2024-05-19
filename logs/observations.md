@@ -1,4 +1,6 @@
-# Here are min clashes observed for both datasets, different slots, shifts, iterations.
+Samvel Topuzyan
+
+Here are min clashes observed for both datasets, different slots, shifts, iterations.
 
 ### File: ute-s-92.stu
 
@@ -241,3 +243,8 @@ This button does the progressive testing. Does some number of iterations, and if
 does several updates based on Hopfield network. The number of updates increases progressively.
 The network was trained on "good" slots. With this implementation, leaving overnight, I was able to reach state with 
 106 clashes for file "car-f-92.stu" with 30 slots. 
+
+For the file ute-s-92.stu with 9 slots were able to find state with 2 clashes.
+For the file car-f-92.stu with 28 slots the algorithm was able to find state with 190 clashes, which is great result.
+As a proof for this last statement I can send the log file via email, where the steps the algorithm took are visible.
+It is over 100MB, could not push to Github.
