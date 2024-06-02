@@ -1,3 +1,7 @@
+# Test project to demonstrate Hopfield Networks
+
+## Implemented Hopfield Networks in the scope of classic exam scheduling problem. The results and findings are described below.
+
 Samvel Topuzyan
 
 Here are min clashes observed for both datasets, different slots, shifts, iterations.
